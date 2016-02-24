@@ -1,4 +1,4 @@
-class Votes < ActiveRecord::Base
+class Vote < ActiveRecord::Base
   belongs_to :candidate_id
   belongs_to :voter
 
