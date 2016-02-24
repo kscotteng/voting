@@ -1,14 +1,14 @@
 class CandidatesController < ApplicationController
   def index
-    render json: Candidates.all
+    render json: Candidate.all
   end
 
   def show
-    render json: Candidates.first
+    render json: Candidate.first
   end
 
   def create
-    c = Candidates.create(name: params[:name], hometown: params[:hometown], district: params[:district], party: params[:party])
+    c = Candidate.create(name: params[:name], hometown: params[:hometown], district: params[:district], party: params[:party])
     render json: c
   end
 end
