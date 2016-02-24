@@ -1,5 +1,5 @@
 class Vote < ActiveRecord::Base
-  belongs_to :candidate_id
+  belongs_to :candidate
   belongs_to :voter
 
   validates :voter_id, presence: true
