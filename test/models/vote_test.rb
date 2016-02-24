@@ -5,5 +5,8 @@ class VoteTest < ActiveSupport::TestCase
     assert true
   end
 
+  def test_vote_class_exists
+    assert Vote
+  end
   
 end
