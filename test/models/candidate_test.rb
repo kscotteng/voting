@@ -5,5 +5,8 @@ class CandidateTest < ActiveSupport::TestCase
     assert true
   end
 
+  def test_candidate_class_exists
+    assert Candidate
+  end
   
 end
