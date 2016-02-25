@@ -1,13 +1,13 @@
 class VotersController < ApplicationController
   def update
-
+    render json: Voter.all
   end
 
   def show
-    # token authentication to prove that you are the voter
+    render json: Voter.all
   end
 
   def create
-
+    render json: Voter.all
   end
 end

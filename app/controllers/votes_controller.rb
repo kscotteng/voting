@@ -1,13 +1,13 @@
 class VotesController < ApplicationController
   def index
-    # shows all candidates and a number of votes for each (requires extra reading)
+    render json: Vote.all
   end
 
   def destroy
-
+    render json: Vote.all
   end
 
   def create
-    # with token authentication to show that you are the voter
+    Vote.create(voter_id: params["voter_id"], candidate_id: params["candidate_id"], candidate: params["candidate"])
   end
 end
